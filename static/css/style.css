@@ -1,0 +1,33 @@
+* { box-sizing: border-box; margin: 0; padding: 0;}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  font-size: 18px;
+}
+
+.guia {
+  width: 100vw;
+  height: auto;
+}
+
+.ft-Soporte {
+  background: #00dbff;
+  color: white;
+  border: 0px;
+  font-size: 1em;
+  padding: 1em;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.hr-Image {
+  width: 100%;
+  height: auto;
+}
+
+.pr {
+  display: flex;
+  background: #e5e6e0;
+}
