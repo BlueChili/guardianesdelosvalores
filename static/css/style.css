@@ -1,9 +1,13 @@
 * { box-sizing: border-box; margin: 0; padding: 0;}
 
+@font-face {
+	font-family: 'Comic Book';
+	src: url('/font/cm-bold.otf');
+}
+
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
+  /*display: flex;
+  flex-direction: column;*/
   font-size: 18px;
 }
 
@@ -12,12 +16,17 @@ body {
   height: auto;
 }
 
+.guia img {
+	width: 100%;
+	height: auto;
+}
+
 .ft-Soporte {
   background: #00dbff;
   color: white;
   border: 0px;
   font-size: 1em;
-  padding: 1em;
+  padding: 1m;
   font-weight: 700;
   border-radius: 4px;
 }
@@ -26,8 +35,89 @@ body {
   width: 100%;
   height: auto;
 }
+ 
+.personajes {
+	width: 100vw;
+	padding: 1em;
+	padding-top: 0;
+}
 
 .pr {
   display: flex;
   background: #e5e6e0;
+  align-items: center;
+  border: 2px solid #8E8D8D;
+  border-radius: 1em;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
 }
+
+.pr-Imagen{
+	width: 3em;
+	object-fit: contain;
+}
+
+.pr-Nombre {
+	flex-shrink: 1;
+	width: 100%;
+	height: auto;
+}
+
+.pr-Title {
+	font-family: 'Comic Book';
+	font-size: 2em;
+	margin-left: 0.5em
+}
+.pr-Title.bicky {
+	color: rgb(56, 123, 55);
+}
+.pr-Title.benyamin {
+	color: rgb(191, 164, 66);
+}
+.pr-Title.violeta {
+	color: rgb(199, 39, 144);
+}
+.pr-Title.ruedas {
+	color: rgb(71, 80, 160);
+}
+.pr-Title.pachita {
+	color: rgb(71, 154, 66);
+}
+.pr-Title.tedo {
+	color: rgb(250, 200, 79);
+}
+.pr-Title.terra {
+	color: rgb(163, 154, 56);
+}
+.pr-Title.kara {
+	color: rgb(7, 161, 198);
+}
+.pr-Title.ebony {
+	color: rgb(206, 140, 71);
+}
+.pr-Title.aura {
+	color: rgb(117, 226, 85);
+}
+.pr-Title.skator {
+	color: rgb(255, 117, 50);
+}
+    
+
+@media (min-width: 767px){
+  .pr {
+	  margin-right: 1em;
+	  flex-basis: 40%;
+	  flex-grow: 1;
+  }
+  .pr-Imagen {
+	  width: 6em;
+  }
+  .pr-Title {
+	  font-size: 4em;
+  }
+  .personajes {
+	  display: flex;
+	  flex-wrap: wrap;
+  }
+}
+
